@@ -1,0 +1,53 @@
+@import "../../styles/colorVariables";
+@import "../../styles/fonts";
+
+.back-to-top {
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    z-index: 120;
+    background: $color-glass;
+    color: $color-cyan;
+    border: none;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 24px 0 rgba(0, 255, 247, 0.1);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    @include back-to-top-size;
+    outline: none;
+    backdrop-filter: $color-glass-blur;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background: $color-cyan;
+    color: $color-bg;
+    box-shadow: 0 8px 32px 0 rgba(0, 255, 247, 0.18);
+}
+
+@media (max-width: 700px) {
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+/* Prevent overlap with footer */
+.footer {
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 900px) {
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}

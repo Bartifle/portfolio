@@ -1,0 +1,45 @@
+@import "../../styles/colorVariables";
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: linear-gradient(120deg, #0a0a0f 60%, #003c3c 100%);
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.55;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+}
+
+.blob1 {
+    width: 420px;
+    height: 420px;
+    left: -120px;
+    top: -80px;
+    background: radial-gradient(circle at 30% 30%, #00fff7 0%, #0a0a0f 80%);
+}
+
+.blob2 {
+    width: 350px;
+    height: 350px;
+    right: -100px;
+    top: 30vh;
+    background: radial-gradient(circle at 70% 40%, #00fff7 0%, #003c3c 80%);
+}
+
+.blob3 {
+    width: 300px;
+    height: 300px;
+    left: 40vw;
+    bottom: -120px;
+    background: radial-gradient(circle at 50% 70%, #00fff7 0%, #0a0a0f 80%);
+}

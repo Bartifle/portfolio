@@ -1,0 +1,15 @@
+@import "../../styles/colorVariables";
+@import "../../styles/fonts";
+
+.about-text {
+    @include body-text;
+    color: $color-text;
+    opacity: 0.92;
+}
+
+@media (max-width: 600px) {
+    .about-content {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
+        max-width: 95vw;
+    }
+}

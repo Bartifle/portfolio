@@ -1,0 +1,31 @@
+@import "../../styles/colorVariables";
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    .icon-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        background: $color-glass;
+        box-shadow: 0 0 8px 0 $color-cyan-glow;
+        color: $color-cyan;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        &:hover,
+        &:focus {
+            background: $color-cyan;
+            color: $color-bg;
+            box-shadow: 0 0 16px 0 $color-cyan-glow;
+        }
+        svg {
+            width: 1.3rem;
+            height: 1.3rem;
+            display: block;
+        }
+    }
+}

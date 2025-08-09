@@ -1,0 +1,24 @@
+@import "../../styles/colorVariables";
+@import "../../styles/fonts";
+
+.main-role {
+    @include main-role-text;
+    color: $color-cyan;
+    opacity: 0.85;
+    margin-bottom: 1.2rem;
+}
+
+.main-intro {
+    @include body-text;
+    color: $color-text;
+    opacity: 0.9;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        padding: 1.5rem 0.7rem 1rem 0.7rem;
+        max-width: 95vw;
+    }
+}

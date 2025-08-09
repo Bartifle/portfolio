@@ -1,0 +1,82 @@
+@import "../../styles/colorVariables";
+@import "../../styles/fonts";
+
+.experiences-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    align-items: stretch;
+}
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    text-decoration: none;
+    color: inherit;
+
+    .exp-header {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-bottom: 0.5rem;
+        .exp-role {
+            @include card-title;
+            color: $color-cyan;
+        }
+        .exp-company {
+            @include card-company;
+            color: $color-text;
+        }
+    }
+
+    .exp-period {
+        flex: 0 0 2.5rem;
+        @include card-period;
+        color: $color-cyan;
+        opacity: 0.7;
+        margin-bottom: 0.5rem;
+    }
+
+    .exp-info {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        .exp-job {
+            @include card-text;
+            color: $color-text;
+            opacity: 0.92;
+            margin-bottom: 0.5rem;
+            // align-items: center;
+            text-align: left;
+        }
+        .exp-learned {
+            @include card-text;
+            color: $color-text;
+            opacity: 0.92;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .experiences-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 950px) {
+    .experiences-list {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .experience-card {
+        min-height: 180px;
+    }
+}

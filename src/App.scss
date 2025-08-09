@@ -1,0 +1,69 @@
+@import "./styles/colorVariables";
+@import "./styles/fonts";
+
+body,
+html,
+#root,
+.App {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: $color-bg;
+    color: $color-text;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.App {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.portfolio-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    [class$="-content"] {
+        text-align: center;
+        max-width: 1200px;
+        padding: 2.5rem 2rem 1.5rem 2rem;
+    }
+    [class$="-title"] {
+        color: $color-text;
+        @include section-title;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .title-underline {
+        width: 60px;
+        height: 3px;
+        background: $color-cyan;
+        margin: 0.5rem auto 1.2rem auto;
+        border-radius: 2px;
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 900px) {
+    .portfolio-content {
+        padding: 1rem 0.5rem 2rem 0.5rem;
+        gap: 2rem;
+    }
+}

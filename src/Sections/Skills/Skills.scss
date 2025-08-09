@@ -1,0 +1,68 @@
+@import "../../styles/colorVariables";
+@import "../../styles/fonts";
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    justify-content: center;
+}
+
+.skill-card {
+    width: 100%;
+    min-width: 250px;
+    min-height: 300px;
+}
+
+.skill-label {
+    @include card-title;
+    color: $color-cyan;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.skill-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-left: 1rem;
+    text-align: left;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        left: -2px;
+        border: 2px solid $color-cyan;
+        height: 100%;
+        border-radius: 9999px;
+    }
+    li {
+        @include card-text;
+        color: $color-text;
+        opacity: 0.92;
+        display: flex;
+        align-items: center;
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 2px;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .skills-list {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+}
