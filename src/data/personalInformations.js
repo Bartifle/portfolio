@@ -111,14 +111,14 @@ impact.
     skills: {
         systemOps: [
             "Git (GitHub, GitLab, Bitbucket)",
-            ["CI/CD", "AWS", <DiAws />],
+            ["CI/CD", ", AWS", <DiAws />],
             ["Linux", <DiLinux />, "Windows", <DiWindows />, "macOS"],
         ],
         development: [
             ["SQL/NoSQL", <DiPostgresql />, <DiMongodb />],
             "GraphQL",
             ["React", <DiReact />, "Angular", <DiAngularSimple />],
-            ["Node.js", <DiNodejsSmall />, "Next.js", "Express.js"],
+            ["Node.js", <DiNodejsSmall />, "Next.js", ", Express.js"],
             "Paradigms: OOP, Functional, Imperative",
         ],
         methodologies: ["Agile", "TDD and BDD", "Penetration testing, security audits"],
