@@ -29,20 +29,6 @@ impact.
 `,
     experiences: [
         {
-            company: "Golden Chateau",
-            role: "Freelance",
-            period: "2015 - 2021",
-            description: ["Website creation and maintenance", "Marketing support"],
-            learned: ["Site creation", "Time management", "SEO"],
-        },
-        {
-            company: "Capcod",
-            role: "DevOps Engineer Assistant",
-            period: "2021 - 2021",
-            description: ["CI/CD Migration", "Development of a CI/CD Pipeline creation automation app", "DevOps (AWS)"],
-            learned: ["Agile / Scrum", "AWS", "Bitbucket"],
-        },
-        {
             company: "ACCSYS",
             role: "Software Developer",
             period: "2021 - 2024",
@@ -55,56 +41,77 @@ impact.
             ],
             learned: ["Project management", "Team management"],
         },
+        {
+            company: "Capcod",
+            role: "DevOps Engineer",
+            period: "2021 - 2021",
+            description: ["CI/CD Migration", "Development of a CI/CD Pipeline creation automation app", "DevOps (AWS)"],
+            learned: ["Agile / Scrum", "AWS", "Bitbucket"],
+        },
+        {
+            company: "Golden Chateau",
+            role: "Freelance",
+            period: "2015 - 2021",
+            description: ["Website creation and maintenance", "Marketing support"],
+            learned: ["Site creation", "Time management", "SEO"],
+        },
     ],
     projects: [
         {
-            name: "Inoft Vocal Framework",
-            description: "Framework made to deploy voice assistant apps (compatible with Bixby, Google, ...)",
-            link: "https://github.com/Bartifle/inoft_vocal_framework",
-            image: "",
-        },
-        {
-            name: "CI/CD Pipeline Creation Tool",
-            description: "Little app made with Python and QT, to automate the creation of AWS CI/CD Pipelines.",
-            link: "https://github.com/Bartifle/CI-CD-Pipeline-Creation-Tool",
-            image: "",
-        },
-        {
-            name: "Custom Keyboard",
-            description: `Made a custom ortholinear keyboard with custom "Coding" layout (mix between AZERTY and QWERTY + personal touches) and a gaming layout.`,
-            link: "https://github.com/Bartifle/qmk_firmware",
-            image: "",
-        },
-        {
-            name: "Kinney Wiruth Calculator",
-            description: "Construction site risk assesment calculator based on Kinney Wiruth calculation theory.",
-            link: "https://github.com/Bartifle/calculatrice_kinney-wiruth",
-            image: "",
-        },
-        {
-            name: "3D Bim Viewer",
-            description: "Personal 3D Bim viewer, based on Xeokit SDK.",
-            link: "https://github.com/Bartifle/3D_bim_viewer",
-            image: "",
-        },
-        {
-            name: "Rename_ly",
-            description: "Discord Bot used to rename guild members for a specific event, randomly from a txt input.",
-            link: "https://github.com/Bartifle/Rename_ly",
-            image: "",
-        },
-        {
-            name: "Google Extension Course",
-            description:
-                "Went through google extension courses. And made 4 little extensions : Reading Timer, Focus Mode, Tabs Manager and Service Worker Example.",
-            link: "https://github.com/Bartifle/Google-Extensions-Course",
+            name: "AI Vision AimAssist",
+            description: `Learning project that explores real-time computer vision and ai-assisted input. Using ONNX Runtime and DirectML combined with multithreaded video capture and inference.`,
+            link: "https://github.com/Bartifle/AI-Vision-Aim-Assist-Learning-Project-with-YOLOv8-DirectML",
             image: "",
         },
         {
             name: "3D .mhd Viewer",
             description:
-                "Particle physicist friend needed a lightweight, browser-based viewer for 3D data in the .mhd and .raw formats. This project became a little bigger than just particle dispersion visualisation.",
+                "A particle physicist friend needed a lightweight, browser-based viewer for 3D data in the .mhd and .raw formats. This project ended up being a little bigger than just particle dispersion visualization.",
             link: "https://github.com/Bartifle/3D-mhd-displayer",
+            image: "",
+        },
+        {
+            name: "Custom Keyboard",
+            description: `Built a custom ortholinear keyboard with a custom “Coding” layout (a mix between AZERTY and QWERTY + personal touches) and a dedicated gaming layout.`,
+            link: "https://github.com/Bartifle/qmk_firmware",
+            image: "",
+        },
+        {
+            name: "Kinney Wiruth Calculator",
+            description: "Construction site risk assessment calculator based on the Kinney-Wiruth calculation method.",
+            link: "https://github.com/Bartifle/calculatrice_kinney-wiruth",
+            image: "",
+        },
+        {
+            name: "CI/CD Pipeline Creation Tool",
+            description: "Small app made with Python and Qt to automate the creation of AWS CI/CD pipelines.",
+            link: "https://github.com/Bartifle/CI-CD-Pipeline-Creation-Tool",
+            image: "",
+        },
+        {
+            name: "Rename_ly",
+            description:
+                "Discord bot used to rename guild members for a specific event, randomly from a .txt input file.",
+            link: "https://github.com/Bartifle/Rename_ly",
+            image: "",
+        },
+        {
+            name: "3D Bim Viewer",
+            description: "Personal 3D BIM viewer, based on the Xeokit SDK.",
+            link: "https://github.com/Bartifle/3D_bim_viewer",
+            image: "",
+        },
+        {
+            name: "Google Extension Course",
+            description:
+                "Completed Google extension courses and built 4 small extensions: Reading Timer, Focus Mode, Tabs Manager, and Service Worker Example.",
+            link: "https://github.com/Bartifle/Google-Extensions-Course",
+            image: "",
+        },
+        {
+            name: "Inoft Vocal Framework",
+            description: "Framework created to deploy voice assistant apps (compatible with Bixby, Google, etc.).",
+            link: "https://github.com/Bartifle/inoft_vocal_framework",
             image: "",
         },
     ],
@@ -118,7 +125,7 @@ impact.
             ["SQL/NoSQL", <DiPostgresql />, <DiMongodb />],
             "GraphQL",
             ["React", <DiReact />, "Angular", <DiAngularSimple />],
-            ["Node.js", <DiNodejsSmall />, "Next.js", ", Express.js"],
+            ["Node.js", <DiNodejsSmall />, "Next.js, Express.js"],
             "Paradigms: OOP, Functional, Imperative",
         ],
         methodologies: ["Agile", "TDD and BDD", "Penetration testing, security audits"],

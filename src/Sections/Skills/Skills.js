@@ -7,9 +7,9 @@ const skillCategories = [
     { key: "systemOps", label: "System & Ops" },
     { key: "development", label: "Development" },
     { key: "methodologies", label: "Methodologies" },
-    { key: "languages", label: "Languages" },
+    { key: "languages", label: "Programming" },
     { key: "softSkills", label: "Soft Skills" },
-    { key: "speaking", label: "Speaked Languages" },
+    { key: "speaking", label: "Languages" },
 ];
 
 function Skills() {
